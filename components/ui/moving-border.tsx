@@ -18,6 +18,7 @@ export function MovingBorderBtn({
     borderClassName,
     duration,
     className,
+    onClick,
     ...otherProps
 }: {
     borderRadius?: string;
@@ -27,10 +28,12 @@ export function MovingBorderBtn({
     borderClassName?: string;
     duration?: number;
     className?: string;
+    onClick?: () => void;
     [key: string]: any;
 }) {
     return (
         <Component
+            onClick={onClick}
             className={cn(
                 "bg-transparent relative text-xl  h-16 w-40 p-[1px] overflow-hidden ",
                 containerClassName

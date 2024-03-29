@@ -1,8 +1,28 @@
+"use client"
+
 import { MovingBorderBtn } from '@/components/ui/moving-border'
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
 
 export default function HeroSection() {
+
+    const [buttonText, setButtonText] = useState('Looking for 2024 Summer COOP! 🚀');
+    const [isFading, setIsFading] = useState(false);
+
+    const handleChangeText = () => {
+        setIsFading(true);
+        setTimeout(() => {
+            setButtonText(prevButtonText =>
+                prevButtonText === 'Looking for 2024 Summer COOP! 🚀' ? 'Take a look at my resume!' : 'Looking for 2024 Summer COOP! 🚀'
+            );
+            setIsFading(false);
+        }, 250);
+    };
+
+    const handlePDF = () => {
+        window.open('https://www.dropbox.com/scl/fi/hzdx4ylvfheo9uw0nutmy/Richard_Bai_Resume_AI.pdf?rlkey=pyiro5eza88zrusjrwrlz1wr2&dl=0', '_blank');
+    }
+
     return (
         <div className='min-h-[60vh] flex flex-col-reverse gap-14 lg:gap-0 lg:flex-row items-center justify-between'>
             <div className='space-y-10 text-center lg:text-left'>
@@ -37,9 +57,13 @@ export default function HeroSection() {
                     <div className='glow absolute top-[40%] right-1/2 -z-10'></div>
                 </div>
 
-                <MovingBorderBtn>
-                    <p>Looking for 2024 Summer CO-OP</p>
-                </MovingBorderBtn>
+                <div onMouseEnter={handleChangeText} onMouseLeave={handleChangeText}>
+                    <MovingBorderBtn onClick={handlePDF}>
+                        <p className={`text-md font-semibold transition-opacity ease-linear duration-500 ${isFading ? 'opacity-0' : 'opacity-100'}`}>
+                            {buttonText}
+                        </p>
+                    </MovingBorderBtn>
+                </div>
             </div>
         </div>
     )
