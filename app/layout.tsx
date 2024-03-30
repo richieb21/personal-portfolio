@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   authors: {
     name: "Richard Bai"
   },
+  keywords: ["Richard Bai", "Portfolio", "Software Developer", "University of Waterloo", "Computer Science", "Full-Stack", "React", "Next.js", "TailwindCSS", "Vercel", "Node.js", "Express", "MongoDB", "Socket.io", "TypeScript", "Vite", "Postman", "GitHub", "LinkedIn", "Instagram"],
 };
 
 export default function RootLayout({
