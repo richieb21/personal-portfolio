@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description: "Richard Bai's personal programming portfolio",
   authors: {
     name: "Richard Bai"
-  }
+  },
 };
 
 export default function RootLayout({
@@ -21,6 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="icon" href="/favicon.ico"></link>
+      </head>
       <body className={GeistSans.className}>
         <ThemeProvider
           attribute="class"

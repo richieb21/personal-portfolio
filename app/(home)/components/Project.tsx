@@ -1,5 +1,5 @@
 import React from 'react'
-import { SiExpress, SiMongodb, SiNodedotjs, SiSocketdotio, SiVite } from 'react-icons/si';
+import { SiExpress, SiMongodb, SiNextdotjs, SiNodedotjs, SiPostman, SiReact, SiRender, SiSocketdotio, SiTypescript, SiVercel, SiVite } from 'react-icons/si';
 import Title from './Title';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
@@ -8,6 +8,27 @@ import { DirectionAwareHover } from '@/components/ui/direction-aware-hover';
 export default function Project() {
 
     const projects = [
+        {
+            title: "Code Wizard",
+            tech: [SiReact, SiNodedotjs, SiExpress, SiMongodb, SiPostman],
+            link: "https://github.com/richieb21/code-wizard",
+            cover: "/code-wizard.png",
+            background: "bg-indigo-500"
+        },
+        {
+            title: "Beacons.us",
+            tech: [SiReact, SiNodedotjs, SiExpress, SiMongodb, SiPostman],
+            link: "https://github.com/willi-li-am/beacons",
+            cover: "/beacons.png",
+            background: "bg-green-500"
+        },
+        {
+            title: "Sorting Visualizer",
+            tech: [SiNextdotjs, SiVercel, SiTypescript],
+            link: "https://sorting-visualizer-88s3.vercel.app/",
+            cover: "/sorting.png",
+            background: "bg-blue-500"
+        },
         {
             title: "Pulsar Chat-App",
             tech: [SiVite, SiNodedotjs, SiExpress, SiMongodb, SiSocketdotio],
