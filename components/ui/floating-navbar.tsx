@@ -82,5 +82,5 @@ export const FloatingNav = ({
 };
 
 const handleClick = () => {
-    window.open("https://www.dropbox.com/scl/fi/hzdx4ylvfheo9uw0nutmy/Richard_Bai_Resume_AI.pdf?rlkey=pyiro5eza88zrusjrwrlz1wr2&dl=0", "_blank");
+    window.open("https://www.dropbox.com/scl/fi/pzwno3tjjx47mmuqqw9wq/Richard_Bai_Resume_AI_External.pdf?rlkey=3lqobba4k1ey0w05t9cme5odq&dl=0", "_blank");
 }
