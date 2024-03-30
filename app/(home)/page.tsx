@@ -3,10 +3,11 @@ import Navbar from './components/Navbar'
 import HeroSection from './components/HeroSection'
 import Skills from './components/Skills'
 import Project from './components/Project'
+import Footer from './components/Footer'
 
 export default function page() {
   return (
-    <div className='min-h-[400vh] bg-black'>
+    <div className='min-h-screen bg-black'>
       <div className='dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative'>
         <div className='max-w-7xl mx-auto p-5'>
           <Navbar />
@@ -27,6 +28,7 @@ export default function page() {
       <div className='max-w-7xl mx-auto mt-20'>
         <Skills />
         <Project />
+        <Footer />
       </div>
     </div>
   )
