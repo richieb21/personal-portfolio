@@ -3,17 +3,18 @@
 import { MovingBorderBtn } from '@/components/ui/moving-border'
 import Link from 'next/link'
 import React, { useState } from 'react'
+import Title from './Title';
 
 export default function HeroSection() {
 
-    const [buttonText, setButtonText] = useState('Looking for 2024 Summer COOP! 🚀');
+    const [buttonText, setButtonText] = useState('Seeking 2024 Summer COOP! 🚀');
     const [isFading, setIsFading] = useState(false);
 
     const handleChangeText = () => {
         setIsFading(true);
         setTimeout(() => {
             setButtonText(prevButtonText =>
-                prevButtonText === 'Looking for 2024 Summer COOP! 🚀' ? 'Take a look at my resume!' : 'Looking for 2024 Summer COOP! 🚀'
+                prevButtonText === 'Seeking 2024 Summer COOP! 🚀' ? 'Take a look at my resume!' : 'Seeking 2024 Summer COOP! 🚀'
             );
             setIsFading(false);
         }, 250);
@@ -35,11 +36,7 @@ export default function HeroSection() {
                 </p>
 
                 <Link href={"mailto:r25bai@uwaterloo.ca"} className='inline-block'>
-                    <div>
-                        <h1 className='text-xl font-bold hover:text-green-400 transition duration-350 ease-in'>Contact Me 📭</h1>
-                        <div className='w-full h-2 bg-green-500 rounded-full'></div>
-                        <div className='w-full h-2 bg-indigo-500 rounded-full translate-x-2'></div>
-                    </div>
+                    <Title text={"Contact Me 📭"} />
                 </Link>
             </div>
 
@@ -59,7 +56,7 @@ export default function HeroSection() {
 
                 <div onMouseEnter={handleChangeText} onMouseLeave={handleChangeText}>
                     <MovingBorderBtn onClick={handlePDF}>
-                        <p className={`text-md font-semibold transition-opacity ease-linear duration-500 ${isFading ? 'opacity-0' : 'opacity-100'}`}>
+                        <p className={`text-md m-2 font-semibold transition-opacity ease-linear duration-500 ${isFading ? 'opacity-0' : 'opacity-100'}`}>
                             {buttonText}
                         </p>
                     </MovingBorderBtn>
