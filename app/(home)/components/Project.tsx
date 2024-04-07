@@ -48,7 +48,7 @@ export default function Project() {
             <div className='grid grid-cols-1 sm:grid-cols-2 pt-20 gap-5'>
                 {projects.map((project, index) => {
                     return <Link href={project.link} key={index} target='_blank'>
-                        <div className={cn("p-3 rounded-md ", project.background)}>
+                        <div className={cn("p-0.5 rounded-md ", project.background)}>
                             <DirectionAwareHover
                                 imageUrl={project.cover}
                                 className='w-full space-y-5'
