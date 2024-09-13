@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
-import { GeistSans } from 'geist/font/sans';
+import { GeistSans } from "geist/font/sans";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 
@@ -10,9 +10,30 @@ export const metadata: Metadata = {
   title: "Richard Bai",
   description: "Richard Bai's personal programming portfolio",
   authors: {
-    name: "Richard Bai"
+    name: "Richard Bai",
   },
-  keywords: ["Richard Bai", "Portfolio", "Software Developer", "University of Waterloo", "Computer Science", "Full-Stack", "React", "Next.js", "TailwindCSS", "Vercel", "Node.js", "Express", "MongoDB", "Socket.io", "TypeScript", "Vite", "Postman", "GitHub", "LinkedIn", "Instagram"],
+  keywords: [
+    "Richard Bai",
+    "Portfolio",
+    "Software Developer",
+    "University of Waterloo",
+    "Computer Science",
+    "Full-Stack",
+    "React",
+    "Next.js",
+    "TailwindCSS",
+    "Vercel",
+    "Node.js",
+    "Express",
+    "MongoDB",
+    "Socket.io",
+    "TypeScript",
+    "Vite",
+    "Postman",
+    "GitHub",
+    "LinkedIn",
+    "Instagram",
+  ],
 };
 
 export default function RootLayout({
