@@ -14,6 +14,7 @@ import {
   IconHome,
   IconNewSection,
   IconTerminal2,
+  IconBrandLinkedin,
 } from "@tabler/icons-react";
 
 export default function page() {
@@ -67,24 +68,24 @@ export default function page() {
     },
 
     {
-      title: "Twitter",
+      title: "LinkedIn",
       icon: (
-        <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconBrandLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "https://www.linkedin.com/in/richard-bai-426b1a21a/",
     },
     {
       title: "GitHub",
       icon: (
         <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "https://github.com/richieb21",
     },
   ];
 
   return (
     <div className="min-h-screen bg-black">
-      <div className="dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative">
+      <div className="relative">
         <div className="max-w-7xl mx-auto p-5">
           <FloatingNav navItems={navItems} />
           <Navbar />
