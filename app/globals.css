@@ -86,3 +86,7 @@
 .transition-opacity {
   transition: opacity 0.5s linear;
 }
+
+html {
+  scroll-behavior: smooth;
+}

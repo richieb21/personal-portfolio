@@ -1,9 +1,7 @@
 "use client";
 
-import { MovingBorderBtn } from "@/components/ui/moving-border";
 import Link from "next/link";
-import React, { useState } from "react";
-import Title from "./Title";
+import React from "react";
 import { FlipWords } from "@/components/ui/flip-words";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 
@@ -16,7 +14,7 @@ export default function HeroSection() {
         <h1 className="text-4xl font-normal lg:text-5xl">
           Hi, I&apos;m Richard Bai 👋 <br />{" "}
           <span className="mt-2 block">
-            {"And Im"}
+            {"And I'm"}
             <FlipWords words={words} />
           </span>
         </h1>
@@ -29,7 +27,7 @@ export default function HeroSection() {
 
         <Link href={"mailto:r25bai@uwaterloo.ca"} className="inline-block">
           <h1 className="text-2xl hover:text-blue-400 transition duration-350 ease-in">
-            {"Contact Me"}
+            {"Contact Me!"}
           </h1>
         </Link>
       </div>

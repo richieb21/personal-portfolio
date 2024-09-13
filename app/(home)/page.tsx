@@ -9,19 +9,17 @@ import { SiReact } from "react-icons/si";
 import { FloatingDock } from "@/components/ui/floating-dock";
 import {
   IconBrandGithub,
-  IconBrandX,
-  IconExchange,
   IconHome,
-  IconNewSection,
-  IconTerminal2,
   IconBrandLinkedin,
+  IconBrandInstagram,
+  IconPaperclip,
 } from "@tabler/icons-react";
 
 export default function page() {
   const navItems = [
     {
       name: "Home",
-      link: "#",
+      link: "#hero",
       icon: <SiReact className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
@@ -42,29 +40,14 @@ export default function page() {
       icon: (
         <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
-    },
-
-    {
-      title: "Products",
-      icon: (
-        <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
+      href: "#hero",
     },
     {
-      title: "Components",
+      title: "Instagram",
       icon: (
-        <IconNewSection className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconBrandInstagram className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
-    },
-    {
-      title: "Changelog",
-      icon: (
-        <IconExchange className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "#",
+      href: "https://www.instagram.com/richie.b18/",
     },
 
     {
@@ -81,6 +64,13 @@ export default function page() {
       ),
       href: "https://github.com/richieb21",
     },
+    {
+      title: "Resume",
+      icon: (
+        <IconPaperclip className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+      ),
+      href: "/resume.pdf",
+    },
   ];
 
   return (
@@ -89,7 +79,7 @@ export default function page() {
         <div className="max-w-7xl mx-auto p-5">
           <FloatingNav navItems={navItems} />
           <Navbar />
-          <section id="/">
+          <section id="hero">
             <HeroSection />
           </section>
           <div

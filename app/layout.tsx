@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
-import { Space_Grotesk } from "next/font/google";
 import { GeistSans } from "geist/font/sans";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-
-const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Richard Bai",
