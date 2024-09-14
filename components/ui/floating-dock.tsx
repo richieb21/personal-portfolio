@@ -170,8 +170,12 @@ function IconContainer({
   return (
     <Link
       href={href}
-      target={isExternalLink ? "_blank" : undefined}
-      rel={isExternalLink ? "noopener noreferrer" : undefined}
+      target={href.endsWith(".pdf") || isExternalLink ? "_blank" : undefined}
+      rel={
+        href.endsWith(".pdf") || isExternalLink
+          ? "noopener noreferrer"
+          : undefined
+      }
     >
       <motion.div
         ref={ref}

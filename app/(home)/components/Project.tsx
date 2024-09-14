@@ -24,28 +24,28 @@ export default function Project() {
       tech: [SiReact, SiNodedotjs, SiExpress, SiMongodb, SiPostman],
       link: "https://github.com/richieb21/code-wizard",
       cover: "/code-wizard.png",
-      background: "bg-indigo-500",
+      background: "bg-white", // Changed to white
     },
     {
       title: "Beacons.us",
       tech: [SiReact, SiNodedotjs, SiExpress, SiMongodb, SiPostman],
       link: "https://github.com/willi-li-am/beacons",
       cover: "/beacons.png",
-      background: "bg-green-500",
+      background: "bg-white", // Changed to white
     },
     {
       title: "Sorting Visualizer",
       tech: [SiNextdotjs, SiVercel, SiTypescript],
       link: "https://sorting-visualizer-88s3.vercel.app/",
       cover: "/sorting.png",
-      background: "bg-blue-500",
+      background: "bg-white", // Changed to white
     },
     {
       title: "Pulsar Chat-App",
       tech: [SiVite, SiNodedotjs, SiExpress, SiMongodb, SiSocketdotio],
       link: "https://github.com/richieb21/pulsar-chatapp",
       cover: "/pulsar.png",
-      background: "bg-indigo-500",
+      background: "bg-white", // Changed to white
     },
   ];
 
@@ -59,8 +59,13 @@ export default function Project() {
       <div className="grid grid-cols-1 sm:grid-cols-2 pt-20 gap-5">
         {projects.map((project, index) => {
           return (
-            <Link href={project.link} key={index} target="_blank">
-              <div className={cn("p-0.5 rounded-md ", project.background)}>
+            <Link
+              href={project.link}
+              key={index}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className={cn("p-0.5 rounded-lg ", project.background)}>
                 <DirectionAwareHover
                   imageUrl={project.cover}
                   className="w-full space-y-5"
