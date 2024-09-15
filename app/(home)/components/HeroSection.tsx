@@ -29,9 +29,14 @@ export default function HeroSection() {
           href={"mailto:r25bai@uwaterloo.ca"}
           className="inline-block relative z-20"
         >
-          <h1 className="text-2xl text-white transition-all duration-500 ease-in-out bg-clip-text hover:bg-gradient-to-r hover:from-pink-400 hover:via-purple-400 hover:to-blue-400 hover:text-transparent">
-            {"Contact Me!"}
-          </h1>
+          <div className="group">
+            <h1 className="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 transition-all duration-500 ease-in-out group-hover:opacity-100 opacity-0">
+              Contact Me!
+            </h1>
+            <h1 className="text-2xl text-white transition-all duration-500 ease-in-out absolute top-0 left-0 group-hover:opacity-0 opacity-100">
+              Contact Me!
+            </h1>
+          </div>
         </Link>
       </div>
       <BackgroundBeams className="absolute inset-0 z-0" />
