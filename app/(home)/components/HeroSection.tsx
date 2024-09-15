@@ -9,8 +9,8 @@ export default function HeroSection() {
   const words = ["a Software Engineer", "a Problem Solver", "an Innovator"];
 
   return (
-    <div className="min-h-[60vh] flex flex-col-reverse gap-14 lg:gap-0 lg:flex-row items-center justify-between">
-      <div className="space-y-6 text-center lg:text-left">
+    <div className="min-h-[40vh] flex flex-col-reverse gap-14 lg:gap-0 lg:flex-row items-center justify-between relative">
+      <div className="space-y-6 text-center lg:text-left relative z-10">
         <h1 className="text-4xl font-normal lg:text-5xl">
           Hi, I&apos;m Richard Bai 👋 <br />{" "}
           <span className="mt-2 block">
@@ -25,13 +25,16 @@ export default function HeroSection() {
           }
         </p>
 
-        <Link href={"mailto:r25bai@uwaterloo.ca"} className="inline-block">
-          <h1 className="text-2xl hover:text-blue-400 transition duration-350 ease-in">
+        <Link
+          href={"mailto:r25bai@uwaterloo.ca"}
+          className="inline-block relative z-20"
+        >
+          <h1 className="text-2xl text-white transition-all duration-500 ease-in-out bg-clip-text hover:bg-gradient-to-r hover:from-pink-400 hover:via-purple-400 hover:to-blue-400 hover:text-transparent">
             {"Contact Me!"}
           </h1>
         </Link>
       </div>
-      <BackgroundBeams />
+      <BackgroundBeams className="absolute inset-0 z-0" />
     </div>
   );
 }

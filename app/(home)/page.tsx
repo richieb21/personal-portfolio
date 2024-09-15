@@ -14,12 +14,18 @@ import {
   IconBrandInstagram,
   IconPaperclip,
 } from "@tabler/icons-react";
+import Experience from "./components/Experience";
 
 export default function page() {
   const navItems = [
     {
       name: "Home",
       link: "#hero",
+      icon: <SiReact className="h-4 w-4 text-neutral-500 dark:text-white" />,
+    },
+    {
+      name: "Experience",
+      link: "#experience",
       icon: <SiReact className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
@@ -97,7 +103,10 @@ export default function page() {
         <div className="h-10 xl:h-32 bg-gradient-to-t from-black absolute -bottom-5 left-0"></div>
       </div>
 
-      <div className="max-w-7xl mx-auto mt-20">
+      <div className="max-w-7xl mx-auto">
+        <section id="experience">
+          <Experience />
+        </section>
         <section id="skills">
           <Skills />
         </section>
