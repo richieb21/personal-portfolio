@@ -12,6 +12,12 @@ interface ExperienceItem {
 
 const experiences: ExperienceItem[] = [
   {
+    company: "Trend Micro",
+    role: "Incoming Software Engineer Intern",
+    date: "January 2025 - April 2025",
+    description: "Working on enhancing security in the cloud",
+  },
+  {
     company: "Savi Finance",
     role: "Full Stack Developer Intern",
     date: "May 2024 - Present",
