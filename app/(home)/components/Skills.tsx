@@ -4,11 +4,18 @@ import React from "react";
 import Title from "./Title";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 import {
+  SiAmazonaws,
   SiCplusplus,
+  SiDocker,
+  SiFlask,
   SiGit,
+  SiGraphql,
+  SiKubernetes,
   SiMongodb,
   SiNextdotjs,
+  SiNodedotjs,
   SiPostgresql,
+  SiPrisma,
   SiPython,
   SiPytorch,
   SiReact,
@@ -31,10 +38,6 @@ export default function Skills() {
       Icon: SiTailwindcss,
     },
     {
-      text: "TypeScript",
-      Icon: SiTypescript,
-    },
-    {
       text: "MongoDB",
       Icon: SiMongodb,
     },
@@ -43,16 +46,40 @@ export default function Skills() {
       Icon: SiPostgresql,
     },
     {
+      text: "Prisma",
+      Icon: SiPrisma,
+    },
+    {
+      text: "Node.js",
+      Icon: SiNodedotjs,
+    },
+    {
+      text: "Flask",
+      Icon: SiFlask,
+    },
+    {
+      text: "Docker",
+      Icon: SiDocker,
+    },
+    {
+      text: "Kubernetes",
+      Icon: SiKubernetes,
+    },
+    {
+      text: "AWS",
+      Icon: SiAmazonaws,
+    },
+    {
+      text: "GraphQL",
+      Icon: SiGraphql,
+    },
+    {
+      text: "TypeScript",
+      Icon: SiTypescript,
+    },
+    {
       text: "Python",
       Icon: SiPython,
-    },
-    {
-      text: "C++",
-      Icon: SiCplusplus,
-    },
-    {
-      text: "Git",
-      Icon: SiGit,
     },
   ];
 
