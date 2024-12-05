@@ -5,10 +5,8 @@ import Title from "./Title";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
 import {
   SiAmazonaws,
-  SiCplusplus,
   SiDocker,
   SiFlask,
-  SiGit,
   SiGraphql,
   SiKubernetes,
   SiMongodb,
@@ -72,6 +70,10 @@ export default function Skills() {
     {
       text: "GraphQL",
       Icon: SiGraphql,
+    },
+    {
+      text: "PyTorch",
+      Icon: SiPytorch,
     },
     {
       text: "TypeScript",
