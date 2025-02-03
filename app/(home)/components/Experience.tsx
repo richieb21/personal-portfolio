@@ -25,6 +25,12 @@ const experiences: ExperienceItem[] = [
       "Software Engineer Intern on the V1ES ASRM and Data Forwarding Team",
   },
   {
+    company: "WAT.ai",
+    role: "Machine Learning Engineer",
+    date: "September 2024 - April 2025",
+    description: "Automating the analysis of rugby matches",
+  },
+  {
     company: "Savi Finance",
     role: "Full Stack Developer Intern",
     date: "May 2024 - Present",
