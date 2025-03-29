@@ -33,8 +33,8 @@ const BlogPage = () => {
         </header>
 
         <div className="space-y-8">
-          {blogPosts.map((post, index) => (
-            <article className="border-b border-gray-200 pb-8">
+          {blogPosts.map((post, key) => (
+            <article key={key} className="border-b border-gray-200 pb-8">
               <Link href="/blog/my-journey-into-software-engineering">
                 <h2 className="text-2xl font-semibold mb-2 hover:text-blue-600 transition-colors">
                   {post.title}
