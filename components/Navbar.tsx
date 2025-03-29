@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 
 type NavbarProps = {
-  currentPage: "about" | "projects" | "experiences" | "blog";
+  currentPage: "about" | "blog" | "projects" | "experiences";
 };
 
 const Navbar = ({ currentPage }: NavbarProps) => {
@@ -19,6 +19,18 @@ const Navbar = ({ currentPage }: NavbarProps) => {
             } transition-colors`}
           >
             About
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="/blog"
+            className={`text-lg ${
+              currentPage === "blog"
+                ? "font-semibold text-theme"
+                : "text-gray-700 hover:text-theme"
+            } transition-colors`}
+          >
+            Blog
           </Link>
         </li>
         <li>
@@ -43,18 +55,6 @@ const Navbar = ({ currentPage }: NavbarProps) => {
             } transition-colors`}
           >
             Experiences
-          </Link>
-        </li>
-        <li>
-          <Link
-            href="/blog"
-            className={`text-lg ${
-              currentPage === "blog"
-                ? "font-semibold text-theme"
-                : "text-gray-700 hover:text-theme"
-            } transition-colors`}
-          >
-            Blog
           </Link>
         </li>
       </ul>
