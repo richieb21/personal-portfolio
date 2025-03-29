@@ -40,6 +40,9 @@ const config = {
         theme: {
           DEFAULT: "#D87657",
         },
+        bgtheme: {
+          DEFAULT: "#FBF9F4",
+        },
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",

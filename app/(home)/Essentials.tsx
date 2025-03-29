@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 
 const Essentials = () => {
   return (
-    <div className="min-h-screen bg-[#FAFBFA] text-gray-800 relative">
+    <div className="min-h-screen bg-bgtheme text-gray-800 relative">
       <div className="container mx-auto px-4 py-12 max-w-xl relative z-10">
         <Navbar currentPage="about" />
 
