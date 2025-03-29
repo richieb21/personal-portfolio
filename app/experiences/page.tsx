@@ -54,7 +54,8 @@ const ExperiencesPage = () => {
         </header>
 
         <div className="space-y-12">
-          {experiences.map((exp, index) => (
+          <p>work in progress!</p>
+          {/* {experiences.map((exp, index) => (
             <div
               key={`${exp.company}-${index}`}
               className={
@@ -78,7 +79,7 @@ const ExperiencesPage = () => {
                 <p className="text-gray-600 mt-3">{exp.description}</p>
               )}
             </div>
-          ))}
+          ))} */}
         </div>
 
         <footer className="mt-16 pt-8 border-t border-gray-200">
