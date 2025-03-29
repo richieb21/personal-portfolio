@@ -36,15 +36,6 @@ const ExperiencesPage = () => {
 
   return (
     <div className="min-h-screen bg-[#FAFBFA] text-gray-800 relative">
-      <div
-        className="absolute inset-0 z-0"
-        style={{
-          backgroundImage:
-            "linear-gradient(to right, rgba(166, 173, 168, 0.1) 1px, transparent 1px), linear-gradient(to bottom, rgba(166, 173, 168, 0.1) 1px, transparent 1px)",
-          backgroundSize: "40px 40px",
-        }}
-      />
-
       <div className="container mx-auto px-4 py-12 max-w-xl relative z-10">
         <Navbar currentPage="experiences" />
 
