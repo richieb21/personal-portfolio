@@ -41,20 +41,27 @@ const SocialIcons = () => {
       </div>
 
       <div className="flex items-center gap-2">
-        <a href="https://cs.uwatering.com/#https://richardbai.me/?nav=prev">
+        <a
+          className="text-gray-700 hover:text-theme transition-colors font-medium"
+          href="https://cs.uwatering.com/#https://richardbai.me/?nav=prev"
+        >
           ←
         </a>
         <a
+          className="group"
           href="https://cs.uwatering.com/#https://richardbai.me/"
           target="_blank"
         >
           <img
             src="https://cs.uwatering.com/icon.black.svg"
             alt="CS Webring"
-            className="w-6 h-auto opacity-80"
+            className="w-6 h-auto opacity-80 transition-all group-hover:opacity-100 group-hover:filter group-hover:brightness-50 group-hover:sepia group-hover:hue-rotate-180"
           />
         </a>
-        <a href="https://cs.uwatering.com/#https://richardbai.me/?nav=next">
+        <a
+          className="text-gray-700 hover:text-theme transition-colors font-medium"
+          href="https://cs.uwatering.com/#https://richardbai.me/?nav=next"
+        >
           →
         </a>
       </div>
