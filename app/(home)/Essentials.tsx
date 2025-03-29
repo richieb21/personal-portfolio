@@ -18,14 +18,14 @@ const Essentials = () => {
         <section className="mb-12">
           <h3 className="text-2xl font-semibold mb-4">About Me</h3>
           <p className="mb-4">
-            I'm a software engineer who likes to build resilient and scalable
-            systems, dig deep into open source projects and show off the
-            capabilities of the newest technologies
+            I&apos;m a software engineer who likes to build resilient and
+            scalable systems, dig deep into open source projects and show off
+            the capabilities of the newest technologies
           </p>
           <p className="mb-4">
             I will be working at <span className="text-shopify">Shopify</span>{" "}
-            in the summer and I'm currently studying Computer Science and the
-            University of Waterloo
+            in the summer and I&apos;m currently studying Computer Science and
+            the University of Waterloo
           </p>
         </section>
 
@@ -34,7 +34,7 @@ const Essentials = () => {
           <ul>
             <li className="flex items-start">
               <span className="text-gray-500 font-small mr-3 mt-0.5">—</span>
-              <span>Studying Terraform's open source CLI</span>
+              <span>Studying Terraform&apos;s open source CLI</span>
             </li>
             <li className="flex items-start">
               <span className="text-gray-500 font-small mr-3 mt-0.5">—</span>

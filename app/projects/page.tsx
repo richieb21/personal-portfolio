@@ -24,7 +24,7 @@ const ProjectsPage = () => {
     {
       title: "EliteCode",
       description:
-        "A web and web extension that scrapes user's Leetcode history, submissions and active code. Provides submission feedback, hint generation, Anki-like revision and a graph to visual your submissions like obsidian",
+        "A web and web extension that scrapes user&apos;s Leetcode history, submissions and active code. Provides submission feedback, hint generation, Anki-like revision and a graph to visual your submissions like obsidian",
       skills: ["React.js", "Plasmo", "GPT 4o", "MongoDB"],
       github: "hello",
       demo: "hello",
@@ -46,17 +46,25 @@ const ProjectsPage = () => {
 
         <header className="mb-8">
           <h1 className="text-3xl md:text-4xl font-bold mb-2">Projects</h1>
-          <p className="text-xl text-gray-600">things that I've worked on</p>
+          <p className="text-xl text-gray-600">
+            things that I&apos;ve worked on
+          </p>
         </header>
 
         <div className="space-y-12">
-          {projects.map((project, index) => (
-            <div className="border border-gray-200 bg-[#FAFBFA] rounded-lg p-6 shadow-sm">
+          {projects.map((project, key) => (
+            <div
+              key={key}
+              className="border border-gray-200 bg-[#FAFBFA] rounded-lg p-6 shadow-sm"
+            >
               <h2 className="text-2xl font-semibold mb-2">{project.title}</h2>
               <p className="text-gray-600 mb-4">{project.description}</p>
               <div className="flex gap-2 mb-4">
-                {project.skills.map((skill, index) => (
-                  <span className="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">
+                {project.skills.map((skill, key) => (
+                  <span
+                    key={key}
+                    className="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded"
+                  >
                     {skill}
                   </span>
                 ))}

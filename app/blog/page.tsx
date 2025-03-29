@@ -16,7 +16,7 @@ const BlogPage = () => {
       title: "Leetcode and what it taught me about discipline",
       date: "March 29, 2025",
       content:
-        "Leetcoding is a necessary evil for software engineers. Here's how I'm trying to get better at it.",
+        "Leetcoding is a necessary evil for software engineers. Here&apos;s how I&apos;m trying to get better at it.",
       link: "/blog/leetcode-and-discipline",
     },
   ];
