@@ -24,7 +24,7 @@ const ProjectsPage = () => {
     {
       title: "EliteCode",
       description:
-        "A web and web extension that scrapes user&apos;s Leetcode history, submissions and active code. Provides submission feedback, hint generation, Anki-like revision and a graph to visual your submissions like obsidian",
+        "A web and web extension that scrapes user's Leetcode history, submissions and active code. Provides submission feedback, hint generation, Anki-like revision and a graph to visual your submissions like obsidian",
       skills: ["React.js", "Plasmo", "GPT 4o", "MongoDB"],
       github: "hello",
       demo: "hello",

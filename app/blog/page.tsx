@@ -9,15 +9,24 @@ const BlogPage = () => {
     date: string;
     content: string;
     link: string;
+    complete: boolean;
   };
 
   const blogPosts: BlogPost[] = [
     {
       title: "Leetcode and what it taught me about discipline",
-      date: "March 29, 2025",
+      date: "March 30, 2025",
       content:
-        "Leetcoding is a necessary evil for software engineers. Here's how I'm trying to get better at it.",
+        "Leetcode is a necessary evil for software engineers. Yet, behind the grind, there lies a deeper lesson in self-improvement and discipline",
       link: "/blog/leetcode-and-discipline",
+      complete: true,
+    },
+    {
+      title: "2025 and a dream",
+      date: "in the works",
+      content: "What I will achieve in 2025 (or die trying)",
+      link: "/blog/2025",
+      complete: false,
     },
   ];
   return (
@@ -35,15 +44,25 @@ const BlogPage = () => {
         <div className="space-y-8">
           {blogPosts.map((post, key) => (
             <article key={key} className="pb-8">
-              <Link href="/blog/my-journey-into-software-engineering">
+              <Link href={post.complete ? post.link : ""}>
                 <h2 className="text-2xl font-semibold mb-2 hover:text-blue-600 transition-colors">
                   {post.title}
                 </h2>
               </Link>
               <p className="text-gray-500 text-sm mb-3">{post.date}</p>
-              <p className="text-gray-700 mb-4">{post.content}</p>
-              <Link href="" className="text-theme hover:underline">
-                Coming soon →
+              <p className="text-gray-700 text-md mb-4">{post.content}</p>
+              <Link
+                href={post.complete ? post.link : ""}
+                className="text-theme inline-flex items-center group"
+              >
+                <span className="transition-transform duration-300 group-hover:translate-x-1">
+                  {post.complete ? "Read more" : "Coming soon"}
+                </span>
+                {post.complete && (
+                  <span className="ml-1 transition-transform duration-300 group-hover:translate-x-1">
+                    →
+                  </span>
+                )}
               </Link>
             </article>
           ))}
