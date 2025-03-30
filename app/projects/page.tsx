@@ -18,24 +18,24 @@ const ProjectsPage = () => {
       description:
         "A platform to bet on hackathons local to you with market making agents.",
       skills: ["Next.js", "Supabase", "RabbitMQ", "Postgres"],
-      github: "hello",
-      demo: "hello",
+      github: "https://github.com/steventanyang/market_loo",
+      demo: "https://devpost.com/software/marketloo-prediction-platform-for-hackathons",
     },
     {
       title: "EliteCode",
       description:
         "A web and web extension that scrapes user's Leetcode history, submissions and active code. Provides submission feedback, hint generation, Anki-like revision and a graph to visual your submissions like obsidian",
       skills: ["React.js", "Plasmo", "GPT 4o", "MongoDB"],
-      github: "hello",
-      demo: "hello",
+      github: "https://github.com/elitecode-org",
+      demo: "",
     },
     {
       title: "ChatIsThisReal",
       description:
         "A browser extension that listens to media you consume and uses agents to determine it is misleading",
       skills: ["Plasmo", "Flask", "Tavily", "Langchain"],
-      github: "hello",
-      demo: "hello",
+      github: "https://github.com/richieb21/opensesame",
+      demo: "",
     },
   ];
 
