@@ -78,8 +78,16 @@ const BlogPost = () => {
               the mountain I had to climb. I remember in first year when I saw
               all upper years getting insane coops (Citadel, Databricks, etc!)
               and talking about the number of Leetcodes they solved. They showed
-              me the questions they were asked and I&apos;m not gonna lie, I was
-              absolutely clueless.
+              me the questions they were asked (
+              <a
+                href="https://leetcode.com/problems/find-critical-and-pseudo-critical-edges-in-minimum-spanning-tree/description/"
+                className="underline hover:text-theme"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                like this 💔
+              </a>
+              ) and I&apos;m not gonna lie, I was absolutely clueless .
             </p>
             <p>
               It felt like an uphill battle. I began to wish I was in their
@@ -170,6 +178,8 @@ const BlogPost = () => {
               <a
                 href="https://neetcode.io/"
                 className="underline hover:text-theme"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Neetcode
               </a>{" "}
@@ -178,6 +188,8 @@ const BlogPost = () => {
               <a
                 href="https://neetcode.io/roadmap"
                 className="underline hover:text-theme"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 roadmap
               </a>{" "}
@@ -229,6 +241,8 @@ const BlogPost = () => {
               <a
                 href="https://www.youtube.com/@jamesperaltaSWE/videos"
                 className="underline hover:text-theme"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 check him out!
               </a>
@@ -240,6 +254,8 @@ const BlogPost = () => {
               <a
                 href="https://www.youtube.com/watch?v=RvbssHagzG4"
                 className="underline hover:text-theme"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 here!
               </a>{" "}
