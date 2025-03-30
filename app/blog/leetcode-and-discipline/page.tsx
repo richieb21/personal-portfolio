@@ -121,11 +121,11 @@ const BlogPost = () => {
               stronger? Stay discplined in the gym. Want to get better at
               soccer? Stay disciplined on the field. Want to be healthier? Stay
               disciplined in the kitchen. Frankly, these are all habits that
-              I&apos;m still building but Leetcode definitely laid a structured
-              foundation to continue chipping away at these goals.
+              I&apos;m still building but Leetcode definitely laid out a
+              structured foundation to continue chipping away at these goals.
             </p>
             <p>
-              This brings me back to the idea of{" "}
+              On a related note, this brings me to the idea of{" "}
               <span className="text-theme">delayed gratification</span>, a topic
               discussed in{" "}
               <a
@@ -159,7 +159,7 @@ const BlogPost = () => {
               metaphor for <span className="underline">change</span>. Starting
               something new, whether a habit, project or mindset shift often
               feels disproportionately difficult at first. However, once you
-              show up and start, that&apos;s already 80% of the battle.
+              show up and start, you&apos;ve already fought 80% of the battle.
             </p>
 
             <h2 className="text-2xl font-semibold mt-8 mb-4">
