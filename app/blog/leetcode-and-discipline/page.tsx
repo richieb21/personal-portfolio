@@ -246,11 +246,11 @@ const BlogPost = () => {
               &lt;-
             </p>
             <p>
-              In the end, it wasn't just about solving Leetcode problems.
+              In the end, it wasn&apos;t just about solving Leetcode problems.
               Rather, it was about proving to myself that I could show up every
               day for something hard. That mindset bled into every part of my
               life and prompted reflection into self-improvement as a whole. And
-              for that, I'm grateful.
+              for that, I&apos;m grateful.
             </p>
 
             <div className="flex justify-center">
