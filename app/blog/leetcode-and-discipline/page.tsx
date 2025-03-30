@@ -60,10 +60,10 @@ const BlogPost = () => {
               unfortunately). So that completely ruled out many outdoor
               activities except for the couple of times I went skiing.
               Regardless, I had a burning feeling that I needed to do something
-              to level up one way or another.
+              to improve one way or another.
             </p>
             <p>
-              That&apos;s when I set my sights on Leetcode. I knew it was
+              That&apos;s when I turned towards Leetcode. I knew it was
               something that I needed eventually if I wanted to achieve my
               personal career goals. I also just wanted to improve my critical
               thinking and problem solving skills by challenging my brain with
