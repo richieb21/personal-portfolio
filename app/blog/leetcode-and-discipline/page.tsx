@@ -87,7 +87,7 @@ const BlogPost = () => {
               >
                 like this 💔
               </a>
-              ) and I&apos;m not gonna lie, I was absolutely clueless .
+              ) and I&apos;m not gonna lie, I was absolutely clueless.
             </p>
             <p>
               It felt like an uphill battle. I began to wish I was in their
