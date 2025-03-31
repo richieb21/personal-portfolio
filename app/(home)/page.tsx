@@ -1,6 +1,35 @@
 import React from "react";
 import SocialIcons from "@/components/SocialIcons";
 import Navbar from "@/components/Navbar";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://richardbai.me"),
+  title: "Richard Bai",
+  description: "Engineer, Student, Builder",
+  openGraph: {
+    title: "Richard Bai",
+    description: "Engineer, Student, Builder",
+    url: "https://richardbai.me",
+    siteName: "Richard Bai",
+    images: [
+      {
+        url: "/logo3.png",
+        width: 1200,
+        height: 630,
+        alt: "Richard Bai - Personal Website",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Richard Bai",
+    description: "Engineer, Student, Builder",
+    images: ["/logo3.png"],
+  },
+};
 
 const Essentials = () => {
   return (
