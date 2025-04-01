@@ -283,9 +283,9 @@ const BlogPost = () => {
 
             <div className="mt-6 flex justify-center">
               <iframe
-                src="https://leetcard.jacoblin.cool/richieb21?theme=forest&font=changa&ext=activity"
-                width="75%"
-                height="384"
+                src="https://leetcode-badge-sage.vercel.app/badge/richieb21?theme=light"
+                width="70%"
+                height="190"
                 frameBorder="0"
                 loading="lazy"
                 title="LeetCode Stats"
