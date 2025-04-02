@@ -78,8 +78,7 @@ const Essentials = () => {
             <li className="flex items-start">
               <span className="text-gray-500 font-small mr-3 mt-0.5">—</span>
               <span>
-                A tool that may or may not flood the internet with AI pollution.
-                coming soon :)
+                A tool to help you ship with confidence (coming soon!)
               </span>
             </li>
           </ul>
