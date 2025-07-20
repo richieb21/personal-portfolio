@@ -22,7 +22,7 @@ const BlogPage = () => {
       complete: true,
     },
     {
-      title: "2025 and a dream",
+      title: "2025",
       date: "in the works",
       content: "What I will achieve in 2025",
       link: "/blog/2025",
