@@ -63,6 +63,10 @@ const Essentials = () => {
           <ul>
             <li className="flex items-start">
               <span className="text-gray-500 font-small mr-3 mt-0.5">—</span>
+              <span>Enjoying the summer</span>
+            </li>
+            <li className="flex items-start">
+              <span className="text-gray-500 font-small mr-3 mt-0.5">—</span>
               <span>Studying Terraform&apos;s open source CLI</span>
             </li>
             <li className="flex items-start">
@@ -70,10 +74,6 @@ const Essentials = () => {
               <span>
                 Learning system design and distributed systems architecture
               </span>
-            </li>
-            <li className="flex items-start">
-              <span className="text-gray-500 font-small mr-3 mt-0.5">—</span>
-              <span>Grinding Leetcode (a lot!!)</span>
             </li>
             <li className="flex items-start">
               <span className="text-gray-500 font-small mr-3 mt-0.5">—</span>
